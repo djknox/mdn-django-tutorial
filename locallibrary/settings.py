@@ -128,3 +128,9 @@ STATIC_URL = '/static/'
 INTERNAL_IPS = [
     '127.0.0.1'
 ]
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
+
+# send emails to console (for dev/testing)
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
