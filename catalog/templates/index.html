@@ -15,4 +15,6 @@
     <li><strong>Number of Books with 'banana' in the title:</strong> {{ num_books_with_banana_in_the_title }}</li>
     <li><strong>Number of Genres with 'fiction' in the name:</strong> {{ num_genres_with_fiction_in_the_name }}</li>
   </ul>
+
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
 {% endblock %}
